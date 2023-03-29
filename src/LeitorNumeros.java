@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class LeitorNumeros {
 
     public static void main(String[] args) {
         Scanner keyboardInput = new Scanner(System.in);
