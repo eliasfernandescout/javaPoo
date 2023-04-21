@@ -25,10 +25,10 @@ public class Main {
         seuCarro.proprietario.nome = "Jhessiny Mattos";
         seuCarro.proprietario.cpf="155.798.387-94";
 
-        System.out.println(meuCarro.anoFabricacao + "-" + meuCarro.modelo);
+        System.out.println(meuCarro.anoFabricacao + " - " + meuCarro.modelo + " - " + meuCarro.proprietario.nome);
 
 
-        System.out.println(seuCarro.anoFabricacao + "-" + seuCarro.modelo);
+        System.out.println(seuCarro.anoFabricacao + " - " + seuCarro.modelo + " - " + seuCarro.proprietario);
 
 
 
