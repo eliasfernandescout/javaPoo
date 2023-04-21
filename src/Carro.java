@@ -4,4 +4,9 @@ public class Carro {
     String cor;
     int anoFabricacao;
 
+    String nome;
+    String cpf;
+    int anoNascimento;
+
+
 }
