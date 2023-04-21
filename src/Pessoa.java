@@ -1,4 +1,4 @@
-public class Pessoa extends Carro {
+public class Pessoa {
     String nome;
     String cpf;
     int anoNascimento;
