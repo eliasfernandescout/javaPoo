@@ -3,10 +3,5 @@ public class Carro {
     String modelo;
     String cor;
     int anoFabricacao;
-
-    String nome;
-    String cpf;
-    int anoNascimento;
-
-
+    Pessoa proprietario;
 }
