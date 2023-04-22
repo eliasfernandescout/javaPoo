@@ -1,4 +1,6 @@
 public class Carro {
+//    String fabricante = "BMW"; INICIAR VARIAVEL COM VALOR PADRAO
+
     String fabricante;
     String modelo;
     String cor;
