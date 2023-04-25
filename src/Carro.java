@@ -5,6 +5,6 @@ public class Carro {
     String modelo;
     String cor;
     int anoFabricacao;
-    Pessoa proprietario;
+    Pessoa proprietario = new Pessoa();
     //CARRO TEM UM PROPRIETARIO DO TIPO PESSOA, ISSO SE CHAMA COMPOSICAO;
 }
