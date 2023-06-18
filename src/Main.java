@@ -35,6 +35,16 @@ public class Main {
 
         System.out.println(pessoa2.nome);
 
+        Carro meuCarro = new Carro();
+        meuCarro.fabricante = "Fiat";
+        meuCarro.modelo = "Punto";
+        meuCarro.cor = "Branco";
+        meuCarro.anoFabricacao = 2014;
+        meuCarro.proprietario = pessoa2;
+
+        System.out.println(meuCarro.proprietario.nome);
+
+
 
 
     }
