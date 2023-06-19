@@ -10,7 +10,7 @@ public class Main {
         meuCarro.fabricante = "Fiat";
         meuCarro.modelo = "Punto";
         meuCarro.cor = "Branco";
-        meuCarro.anoFabricacao = 2014;
+        meuCarro.anoFabricacao = 2020;
         meuCarro.proprietario = pessoa2;
         meuCarro.precoCompra = 117.000;
         meuCarro.calcularValorRevenda();
