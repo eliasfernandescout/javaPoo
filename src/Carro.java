@@ -5,6 +5,12 @@ public class Carro {
     String modelo;
     String cor;
     int anoFabricacao;
-    Pessoa proprietario = new Pessoa();
+    Pessoa proprietario;
     //CARRO TEM UM PROPRIETARIO DO TIPO PESSOA, ISSO SE CHAMA COMPOSICAO;
+
+    void calcularValorRevenda(){
+        System.out.println("Calcular valor de revenda de: " + modelo + anoFabricacao);
+
+
+    };
 }
