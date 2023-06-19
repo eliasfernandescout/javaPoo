@@ -12,6 +12,7 @@ public class Main {
         meuCarro.cor = "Branco";
         meuCarro.anoFabricacao = 2014;
         meuCarro.proprietario = pessoa2;
+        meuCarro.precoCompra = 117.000;
         meuCarro.calcularValorRevenda();
 
         System.out.println(meuCarro.proprietario.nome);

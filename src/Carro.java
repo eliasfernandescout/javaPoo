@@ -6,10 +6,18 @@ public class Carro {
     String cor;
     int anoFabricacao;
     Pessoa proprietario;
+    double precoCompra;
     //CARRO TEM UM PROPRIETARIO DO TIPO PESSOA, ISSO SE CHAMA COMPOSICAO;
 
     void calcularValorRevenda(){
-        System.out.println("Calcular valor de revenda de: " + modelo + anoFabricacao);
+        int tempoUsoAnos = 2022 - anoFabricacao;
+        double valorRevenda = (precoCompra / 20) * (20 - tempoUsoAnos);
+
+        if(valorRevenda < 0){
+            valorRevenda = 0;
+        }
+        System.out.printf("Tempo de uso (anos) %d%n", tempoUsoAnos);
+        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
 
 
     };
