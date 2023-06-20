@@ -22,7 +22,12 @@ public class Carro {
 
     double calcularIpva(){
         double valorRevenda = calcularValorRevenda();
+        double validadeCarro = calcularValidade();
         double valorIpva = valorRevenda * 0.04;
+
+        if(validadeCarro >= 10){
+            valorIpva = 0;
+        }
         return valorIpva;
     }
     int calcularValidade(){
