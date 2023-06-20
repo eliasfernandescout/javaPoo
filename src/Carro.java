@@ -13,16 +13,23 @@ public class Carro {
     void imprimirResumoValidade(){
         int validadeCarro = calcularValidade();
         double valorRevenda = calcularValorRevenda();
+        double valorIpva = calcularIpva();
         System.out.printf("Tempo de uso (anos) %d%n", validadeCarro);
-        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+        System.out.printf("Valor de revenda: %6.3f%n", valorRevenda);
+        System.out.printf("Valor do IPVA: %6.3f%n", valorIpva);
 
+    }
+
+    double calcularIpva(){
+        double valorRevenda = calcularValorRevenda();
+        double valorIpva = valorRevenda * 0.04;
+        return valorIpva;
     }
     int calcularValidade(){
         int validade = 2022 - anoFabricacao;
         return validade;
     }
     double calcularValorRevenda() {
-//        int tempoUsoAnos = 2022 - anoFabricacao;
         int validadeCarro = calcularValidade();
         int vidaUtilAnos = 20;
         double valorRevenda = (precoCompra / vidaUtilAnos) * (vidaUtilAnos - validadeCarro);

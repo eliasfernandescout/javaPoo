@@ -14,15 +14,9 @@ public class Main {
         meuCarro.proprietario = pessoa2;
         meuCarro.precoCompra = 117.000;
         meuCarro.calcularValorRevenda();
+        meuCarro.calcularIpva();
 
         meuCarro.imprimirResumoValidade();
-
-//        double valorRevenda = meuCarro.calcularValorRevenda();
-//        int validadeCarro = meuCarro.calcularValidade();
-
-
-
-
 
     }
 }
