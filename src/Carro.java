@@ -9,17 +9,16 @@ public class Carro {
     double precoCompra;
     //CARRO TEM UM PROPRIETARIO DO TIPO PESSOA, ISSO SE CHAMA COMPOSICAO;
 
-    void calcularValorRevenda(){
+    double calcularValorRevenda() {
         int tempoUsoAnos = 2022 - anoFabricacao;
         int vidaUtilAnos = 20;
         double valorRevenda = (precoCompra / vidaUtilAnos) * (vidaUtilAnos - tempoUsoAnos);
 
-        if(valorRevenda < 0){
+        if (valorRevenda < 0) {
             valorRevenda = 0;
         }
-        System.out.printf("Tempo de uso (anos) %d%n", tempoUsoAnos);
-        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+        return valorRevenda;
+    }
 
 
-    };
 }
