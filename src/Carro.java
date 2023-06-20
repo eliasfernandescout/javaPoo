@@ -10,6 +10,13 @@ public class Carro {
     //CARRO TEM UM PROPRIETARIO DO TIPO PESSOA, ISSO SE CHAMA COMPOSICAO;
 
 
+    void imprimirResumoValidade(){
+        int validadeCarro = calcularValidade();
+        double valorRevenda = calcularValorRevenda();
+        System.out.printf("Tempo de uso (anos) %d%n", validadeCarro);
+        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+
+    }
     int calcularValidade(){
         int validade = 2022 - anoFabricacao;
         return validade;

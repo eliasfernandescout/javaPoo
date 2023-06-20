@@ -15,11 +15,11 @@ public class Main {
         meuCarro.precoCompra = 117.000;
         meuCarro.calcularValorRevenda();
 
-        double valorRevenda = meuCarro.calcularValorRevenda();
-        int validadeCarro = meuCarro.calcularValidade();
+        meuCarro.imprimirResumoValidade();
 
-        System.out.printf("Tempo de uso (anos) %d%n", validadeCarro);
-        System.out.printf("Valor de revenda: %6.2f%n", valorRevenda);
+//        double valorRevenda = meuCarro.calcularValorRevenda();
+//        int validadeCarro = meuCarro.calcularValidade();
+
 
 
 
