@@ -1,3 +1,7 @@
+package api.carro;
+
+import api.carro.Carro;
+
 public class TesteInicializacao {
     public static void main(String[] args) {
         Carro meuCarro = new Carro();
