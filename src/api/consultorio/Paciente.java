@@ -5,10 +5,13 @@ public class Paciente {
     double peso;
     double altura;
 
-    double calcularIndiceMassaCorpotal() {
-        double imcCalculado = peso / (altura * altura);
+    IndiceMassaCorporal calcularIndiceMassaCorpotal() {
+        IndiceMassaCorporal imc = new IndiceMassaCorporal();
+        imc.resultado = peso / (altura * altura);
+        imc.peso = peso;
+        imc.altura = altura;
 
-        return imcCalculado;
+        return imc;
     }
 
 }
