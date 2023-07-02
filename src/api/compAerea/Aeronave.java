@@ -7,11 +7,15 @@ public class Aeronave {
     boolean ativo = true;
 
     public int calcularAssentosDiposniveis() {
+        return totalAssentos = assentosReservados;
+    }
+
+    void reservarAssentos(int numerosAssentos) {
         if (ativo == true) {
-            return totalAssentos - assentosReservados;
+            assentosReservados += numerosAssentos;
         } else {
-            System.out.println("Aeronave desativada, impossivel calcular assentos disponiveis;");
-            return 0;
+            System.out.println("Aeronave desativada, assentos nao reservados;");
+
         }
 
     }

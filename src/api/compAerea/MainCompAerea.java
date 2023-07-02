@@ -6,9 +6,10 @@ public class MainCompAerea {
 
         aviaoGol.nome = "Airbus 780";
         aviaoGol.totalAssentos = 200;
-        aviaoGol.assentosReservados = 87;
+//        aviaoGol.assentosReservados = 87;
         aviaoGol.desativar();
-        aviaoGol.ativar();
+        aviaoGol.reservarAssentos(10);
+//        aviaoGol.ativar();
 
         System.out.printf("GOL (%S): %d assentos disponiveis%n", aviaoGol.ativo ? "Ativo" : "Inativo", aviaoGol.calcularAssentosDiposniveis());
 
