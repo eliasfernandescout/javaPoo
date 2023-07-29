@@ -5,7 +5,10 @@ public class MainProduto2 {
         Produto produto1 = new Produto();
         Produto produto2 = new Produto();
 
-        Produto.custoEmbalagem = 20;
+//        Produto.custoEmbalagem = 20;
+        produto1.alterarCustoEmbalagem(20);
+        produto2.alterarCustoEmbalagem(40); //todo Error - nao usar variavel static;
+
         produto1.imprimirCustoEmbalagem();
         produto2.imprimirCustoEmbalagem();
     }

@@ -3,6 +3,7 @@ package api.produto;
 public class Produto {
     double precoCusto;
     double precoVenda;
+
     static double custoEmbalagem; //static a variavel pertence a classe, podendo ter valor aqui mesmo
 
     void alterarPrecoCusto(double precoCusto){
@@ -11,5 +12,10 @@ public class Produto {
 
     void imprimirCustoEmbalagem(){
         System.out.printf("Custo com embalagem: %.2f%n", custoEmbalagem);
+    }
+
+    void alterarCustoEmbalagem(double custoEmbalagem){
+        Produto.custoEmbalagem = custoEmbalagem; //altera a variavel static
+
     }
 }
