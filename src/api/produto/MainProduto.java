@@ -5,6 +5,7 @@ public class MainProduto {
         Produto novoProduto = new Produto();
 //        double precoCompraFornecedor = 140;
         novoProduto.precoCusto = 100;
+        novoProduto.alterarPrecoCusto(50);
 
         ServicoPrecificacao servicoPrecificacao = new ServicoPrecificacao();
         servicoPrecificacao.definirPrecoVenda(novoProduto, 20);
