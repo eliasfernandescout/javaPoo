@@ -6,6 +6,9 @@ public class Produto {
 
     static double custoEmbalagem; //static a variavel pertence a classe, podendo ter valor aqui mesmo
 
+    static double calcularCustosTotais(Produto produto){
+        return produto.precoCusto + Produto.custoEmbalagem; //todo NO METODO ESTATICO PARA PEGAR VARIAVEIS INSTANCIAVEIS DEVEMOS INSTANCIAR NO PARAMETRO
+    }
     static void alterarCustoEmbalagem(double custoEmbalagem){
         Produto.custoEmbalagem = custoEmbalagem; //altera a variavel static
         //todo o REFERID METODO NAO ALTERA O VALOR PARA CADA INSTANCIA, CASO O METODO SEJA INVOCADO 2X O ULTIMO SOBRESCREVE O PRIMEIRO
