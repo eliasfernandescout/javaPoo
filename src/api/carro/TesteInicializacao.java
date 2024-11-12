@@ -5,6 +5,7 @@ import api.carro.Carro;
 public class TesteInicializacao {
     public static void main(String[] args) {
         Carro meuCarro = new Carro();
+        meuCarro.proprietario = new Pessoa();
 
         meuCarro.fabricante = "Honda";
         meuCarro.anoFabricacao = 2021;
