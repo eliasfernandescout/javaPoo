@@ -2,6 +2,7 @@ package api.laboratorio;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,8 +22,19 @@ public class Main {
 //        laboratorio.cancelarExame("5");
 //        laboratorio.imprimirExames();
 
-        List<Exame> exames = laboratorio.getExames();
-        exames.stream().forEach(System.out::println);
+        List<String> examesId = laboratorio.getExames().stream()
+                .map(Exame::getId)
+                .collect(Collectors.toList());
+        System.out.println(examesId);
+
+        List<Double> valorExames = laboratorio.getExames().stream()
+                .map(exame-> exame.getValor() * 5)
+                .collect(Collectors.toList());
+
+        System.out.println(valorExames);
+        System.out.println("----");
+        valorExames.forEach(System.out::println);
+
 
 
     }
