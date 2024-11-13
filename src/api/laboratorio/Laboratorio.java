@@ -2,6 +2,7 @@ package api.laboratorio;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 @Data
 public class Laboratorio {
@@ -15,7 +16,7 @@ public class Laboratorio {
     private List<Exame> exames;
 
     Laboratorio(String nome, String endereco, String telefone, String email, String cnpj,
-                String responsavel, String especialidade, List<Exame> exames){
+                String responsavel, String especialidade){
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
@@ -23,7 +24,7 @@ public class Laboratorio {
         this.cnpj = cnpj;
         this.responsavel = responsavel;
         this.especialidade = especialidade;
-        this.exames = exames;
+        this.exames = new ArrayList<>();
     }
 
     public Exame agendarExame(String id, String nome, String descricao, double valor){
@@ -35,6 +36,11 @@ public class Laboratorio {
    public void cancelarExame(String id){
         exames.stream().filter(e -> e.getId().equals(id)).findFirst().ifPresent(exames::remove);
    }
+
+   public List<Exame> buscarExames(){
+        return this.getExames();
+
+    }
 
     public void imprimirExames(){
          exames.forEach(System.out::println);
